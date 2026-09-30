@@ -1,0 +1,13 @@
+# This file is a placeholder for the main entrypoint script of the async-event-server.
+#
+# For simplicity, it will just include the core module and start the server.
+#
+# Usage: ./main.sh
+#
+#!/bin/sh
+
+# Source the core module
+. include/core.h
+
+# Start the event server
+start_server

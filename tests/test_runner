@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# This is the test runner script for the async-event-server project.
+#
+# It runs all unit and integration tests in the 'tests' directory.
+#
+# Usage: ./test_runner.sh
+#
+set -e
+
+# Run unit tests
+make check
+
+# Run integration tests
+./tests/integration/run_tests.sh
